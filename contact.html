@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Contact Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- HTML Form Code -->
+        <form method="POST" action="Untitled-1.php">
+            <!-- Form Title -->
+            <div class="form-title">
+                <h1>Contact Form</h1>
+            </div>
+            <!-- Form Inputs -->
+            <div class="form-inputs">
+                <label for="fname">Full Name</label> <span style="color: red;">*</span>
+                <input type="text" name="fname">
+        
+                <label for="email">Email Address</label> <span style="color: red;">*</span>
+                <input type="email" name="email">
+        
+                <label for="msg">Type Your Message</label> <span style="color: red;">*</span>
+                <textarea name="msg" cols="30" rows="10"></textarea>
+        
+                <input type="submit" name="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+</body>
+<style>
+     *{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+div.form-container{
+    max-width: 1600px;
+    height: 100vh;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+form{
+    width: 45%;
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid #c7c7c7;
+    box-shadow: 0 4px 4px rgba(87,100,126,.21);
+}
+
+div.form-title{
+    padding: 10px 0;
+    border-bottom: 1px solid #c5c5c5;
+    background-color: #333333;
+}
+
+div.form-inputs{
+    padding: 20px 50px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+
+input, textarea{
+    display: block;
+    margin: 6px 0 20px 0;
+}
+
+label{
+    font-weight: 400;
+    color: #333333;
+}
+
+input[type=text], input[type=email], textarea{
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 8px;
+    color: #555555;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+}
+
+form input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    outline: 1px solid #c1c1c1;
+}
+
+textarea{
+    resize: none;
+}
+ 
+form input[type=submit]{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 46px;
+    border: none;
+    background-color: #333333;
+    color: white;
+    border-radius: 4px;
+}
+form input[type=submit]:hover{
+    background-color: #0e42de;
+    cursor: pointer;
+}
+</style>
+</html>
